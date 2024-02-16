@@ -9,6 +9,7 @@ function App() {
   
   //State stuff
   const [inputText, setInputText] = useState("");
+  const [inputTag, setInputTag] = useState("");
   const [todos, setTodos] = useState([]);
   const [status,setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
@@ -56,9 +57,11 @@ function App() {
       </header>
       <Form 
           inputText={inputText} 
+          inputTag={inputTag} 
           todos={todos} 
           setTodos={setTodos} 
           setInputText={setInputText}
+          setInputTag={setInputTag}
           setStatus={setStatus}
       />
       <ToDoList setTodos={setTodos} todos={todos}  filteredTodos={filteredTodos}/>

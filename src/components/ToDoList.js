@@ -12,6 +12,7 @@ const ToDoList =({todos,setTodos, filteredTodos}) => {
                         todos={todos} 
                         todo ={todo}
                         key= {todo.id} 
+                        tag= {todo.tag} 
                         text={todo.text}
                     />
                 ))}
